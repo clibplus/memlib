@@ -12,8 +12,7 @@ Mem **___MEMORY___ 			= NULL;
 size_t ___MEMCOUNT___ 		= 0;
 int ___MEM_DEBUG_MODE___ 	= 0;
 
-__attribute__((constructor))
-void init_app_memory() {
+__attribute__((constructor)) void init_app_memory() {
 	___MEMORY___ = (Mem **)malloc(sizeof(Mem *) * 1);
 	memset(___MEMORY___, '\0', sizeof(Mem *) * 1);
 
@@ -34,8 +33,7 @@ void init_app_memory() {
 		printf("[ON_START]: Initialized App Memory\n");
 }
 
-__attribute__((destructor))
-void uninit_app_memory() {
+__attribute__((destructor)) void uninit_app_memory() {
 	if(___MEMCOUNT___ == 0)
 		return;
 

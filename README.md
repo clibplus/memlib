@@ -12,6 +12,7 @@ cd memlib; sh install.sh
 
 # Compilation
 
+GCC and Clang only
 Use flag ``-lmem`` to compile
 
 # Use Example

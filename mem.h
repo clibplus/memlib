@@ -15,6 +15,8 @@ __attribute__((destructor)) void uninit_app_memory();
 static int find_ptr(void *p);
 
 #if defined(CLIBP_MEM)
+
+    typedef void *ptr;
     void *allocate(int size);
     void pfree(void *ptr);
     void *free_n_reuse(void *ptr);
