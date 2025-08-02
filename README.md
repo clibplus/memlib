@@ -6,7 +6,7 @@
 # Installation
 
 ```bash
-git clone https://github.com/algo1337/memlib.git
+git clone https://github.com/clibplus/memlib.git
 cd memlib; sh install.sh
 ```
 
